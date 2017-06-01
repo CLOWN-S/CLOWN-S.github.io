@@ -8,16 +8,11 @@ var btn=document.querySelector('div[class="btn"]');
 		  	if((str1.test(ipts.value))&&(str2.test(pds.value))){
 		  		  localStorage.setItem('ipts',ipts.value);
           		  localStorage.setItem('pds',pds.value);
-          		  alert('注册成功')
-          		  window.open('登录.html')
+          		  alert('注册成功');
+          		  window.history.back(-2); 
 		  	}else{
 		  		alert('您输入有误')
 		  	}
 		
 		  };
-		  zhuye.onclick=function(){
-		  	window.open('登录.html')
-		  }
-		  
-		  
 	
