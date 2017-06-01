@@ -146,6 +146,7 @@ hr{
 	position: absolute;
 	top: 0.5em;
 	left: 8.7em;
+	right: 1em;
 	font-size: 1.1em;
 }
 .footer-box{

@@ -99,7 +99,7 @@
 				<img class="footer-img" src="img/w710h400z1l50t196a.jpg" />
 				<p class="footer-text">组图：总攻变总撩，火辣身材秀美颜</p>
 				<i class="icon-huihua1 iconfont"></i>
-				<span class="footer-text2">255</span>
+				<span class="footer-text2"><255></255></span>
 			</div>
 			<hr />
 		</footer>
@@ -116,42 +116,6 @@
 		<script type="text/javascript" src="js/jquery-1.12.4.js" ></script>
 		<script type="text/javascript" src="js/	首页.js" ></script>
 		<script>
-		window.onload = function() {
-			var mySwiper = new Swiper ('.swiper-container', {
-		   	loop: true,
-		    pagination: '.swiper-pagination',
-		    nextButton: '.swiper-button-next',
-		    prevButton: '.swiper-button-prev',
-		  })     
-		}
-		 function getData(page) {
-        $.ajax({
-            url:'./getPics.php',
-            type:'GET',
-            success:function (res) {
-                var data = JSON.parse(res);
-                show(0)
-                function show(i) {
-                    var img = new Image()
-                    var item = data[i];
-                    if(item){
-                        img.src = item.thumbnail_pic_s;
-                        img.onload = function () {
-                            var str = $('footer').html();
-                            str += '<div class="footmenu"><img class="footer-img" src="${item.thumbnail_pic_s}" /><p class="footer-text">${item.title}</p></div><hr />';
-                            $('footer').html(str);
-                        }
-                        if(i<data.length-1){
-                            show(i+1)
-                        }
-                        isOpen = true;
-                   		}else{
-                        isOpen = false;
-                    }
-                }
-            },
-        })
-    }
 		</script>
 	</body>
 </html>
