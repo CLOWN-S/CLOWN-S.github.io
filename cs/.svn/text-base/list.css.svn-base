@@ -1,0 +1,101 @@
+*{
+	margin: 0;padding: 0;list-style: none;
+}
+.container{
+	width: 100%;
+	height: 3em;
+	background: #007AFF;
+	text-align: center;
+	line-height:3em ;
+	margin-bottom: 1em;
+}
+.icon-xiangzuojiantou{
+	float:left;
+	margin-left: 0.5em;
+	font-size:1.5em ;
+	color: #FFFFFF;
+}
+.container span{
+	font-size: 1.2em ;
+	margin-right: 2em;
+	color: #FFFFFF;
+}
+.table{
+	margin-left: 1.2em;
+	width: 90%;
+	height: 2.5em;
+	border: 1px solid#4294FA;
+}
+.xx{
+	width: 100%;
+	height: 100%;
+}
+.xx li{
+	text-align: center;
+	float: left;
+	border-right:1px solid#4294FA;
+	width: 49.7%;
+	height: 100%;
+	line-height:2.5em ;
+}
+.x-table{
+	width: 88%;
+	height: 2.8em;
+	border: 1px solid#CCCCCC;
+	margin-left: 1.2em;
+	margin-top: 1em;
+	line-height: 2.8em;
+	padding-left: 0.5em;
+}
+.tuo{
+	float: right;
+	width:4.1em;
+	height: 2.1em;
+	border: 1px solid#999999;
+	margin-top: 0.3em;
+	margin-right: 0.5em;
+	border-radius:5em ;
+}
+.yuan{
+	border-radius:50% ;
+	width: 2em;
+	height: 2em;
+	border: 1px solid#999999;
+}
+.x-tables{
+	position: relative;
+	width: 88%;
+	height: 2.8em;
+	border: 1px solid#CCCCCC;
+	margin-left: 1.2em;
+	margin-top: 1em;
+	padding-left: 0.5em;
+}
+.ps{
+	font-size: 0.5em;
+	color: #999999;
+}
+.tuo1{
+	position: absolute;
+	top: 0.5em;left: 16.5em;
+	float: right;
+	width:4.1em;
+	height: 2.1em;
+	border: 1px solid#999999;
+	margin-right: 0.5em;
+	border-radius:5em ;
+}
+.tuo1 i{
+	font-size:0.2em;
+}
+.bs{
+	width: 80%;
+	height: 2.5em;
+	background: #007AFF;
+	color: #FFFFFF;
+	text-align: center;
+	line-height: 2.5em;
+	margin-left: 2.3em;
+	margin-top: 1em;
+	border-radius:5em ;
+}
