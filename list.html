@@ -17,10 +17,26 @@
 		</div>
 		<div class="table">
 			<ul class="xx">
-				<li>首页设置</li>
-				<li>导航</li>
+				<li class="active shezhi" >首页设置</li>
+				<li class="daohang">导航</li>
 			</ul>
 		</div>
+		<div class="box1">
+			<div class="coloe"></div>
+			<div class="text"><p>精品栏目</p></div>
+				<ul class="big-box">
+					<li>天气</li>
+					<li>个人中心</li>
+					<li>猜你喜欢</li>
+					<li>视频</li>
+					<li>NBA</li>
+					<li>占卜</li>
+					<li>二手房</li>
+					<li>车型</li>
+					<li>鲜城</li>
+				</ul>
+		</div>
+		<div class="box">
 		<div class="x-table">
 			<span>无图模式</span>
 			<div class="tuo">
@@ -31,7 +47,7 @@
 			<span class="zhineng">智能模式</span><br />
 			<span class="ps">智能模式会根据您的阅读偏好自动展示首页内容</span>
 			<div class="tuo1">
-				<div class="yuan"></div>
+				<div class="yuan1"></div>
 			</div>
 		</div>
 		<div class="x-tables">
@@ -43,8 +59,61 @@
 			</div>
 		</div>
 		<div class="bs">保存</div>
+		</div>
 		<script type="text/javascript">
-			var 
+			var tuo=document.getElementsByClassName('tuo')[0];
+			var yuan=document.getElementsByClassName('yuan')[0];
+			var yuan1=document.getElementsByClassName('yuan1')[0]
+			var tuo1=document.getElementsByClassName('tuo1')[0];
+			var x=1
+			tuo.onclick=function(){
+				if(x%2==1){
+				 	this.style.background="#008af5";
+			  	yuan.style.background="#FFFFFF";
+			  	yuan.style.transform="translate3d(33px,0,0)";
+			  	x++;
+				}else if(x%2==0){
+					this.style.background="#ffffff";
+					yuan.style.transform="translate3d(0,0,0)";
+					x++;
+				}
+			}
+				
+				tuo1.onclick=function(){
+					if(x%2==1){
+				 	this.style.background="#008af5";
+			  	yuan1.style.background="#FFFFFF";
+			  	yuan1.style.transform="translate3d(33px,0,0)";
+			  	x++;
+				}else if(x%2==0){
+					this.style.background="#ffffff";
+					yuan1.style.transform="translate3d(0,0,0)";
+					x++;
+				}
+				};	
+				var shezhi=document.getElementsByClassName('shezhi')[0],
+				    daohang=document.getElementsByClassName('daohang')[0],
+				    box=document.getElementsByClassName('box')[0],
+				    bs=document.getElementsByClassName('bs')[0];
+				    box1=document.getElementsByClassName('box1')[0];
+				    shezhi.onclick=function(){
+				    	shezhi.classList.add('active'),
+				    	box.style.display="block",
+				    	box1.style.display="none",
+				    	daohang.classList.remove('active');
+				    }
+				    daohang.onclick=function(){
+				    	daohang.classList.add('active');
+				    	box.style.display="none"
+				    	box1.style.display="block"
+				    	shezhi.classList.remove('active')
+				    }
+			  		bs.onclick=function(){
+			  			alert("保存成功")
+			  		}
+			 	
+			  	
+			  
 		</script>
 	</body>
 </html>

@@ -62,6 +62,12 @@
 	height: 2em;
 	border: 1px solid#999999;
 }
+.yuan1{
+	border-radius:50% ;
+	width: 2em;
+	height: 2em;
+	border: 1px solid#999999;
+}
 .x-tables{
 	position: relative;
 	width: 88%;
@@ -70,6 +76,10 @@
 	margin-left: 1.2em;
 	margin-top: 1em;
 	padding-left: 0.5em;
+}
+.active{
+	background: #55A532;
+	color: #FFFFFF;
 }
 .ps{
 	font-size: 0.5em;
@@ -85,6 +95,9 @@
 	margin-right: 0.5em;
 	border-radius:5em ;
 }
+.box1{
+	display: none;
+}
 .tuo1 i{
 	font-size:0.2em;
 }
@@ -98,4 +111,35 @@
 	margin-left: 2.3em;
 	margin-top: 1em;
 	border-radius:5em ;
+}
+.coloe{
+	width: 100%;
+	height: 0.8em;
+	background: #F1F1F1;
+}
+.text{
+	font-size: 1.2em;
+	width: 100%;
+	height: 2.5em;
+	border: 1px solid#CCCCCC;
+	text-align: center;
+	line-height: 2.5em;
+}
+.big-box{
+	box-sizing:border-box ;
+	margin-left: 1.1em;
+	margin-top: 1.5em;
+	width: 90%;
+	height: 12em;
+	border: 1px solid#CCCCCC;
+}
+.big-box li{
+	float: left;
+	width: 6em;
+	height: 3em;
+	border: 1px solid#CCCCCC;
+	text-align: center;
+	line-height: 3em;
+	margin-left: 0.6em;
+	margin-top: 0.6em;
 }

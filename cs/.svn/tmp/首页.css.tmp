@@ -5,6 +5,10 @@
 	box-sizing: border-box;
 	font-family: "微软雅黑";
 }
+a{
+	text-decoration: initial;
+	color: #000000;
+}
 .menu-box{
 	display: flex;
 	flex-flow: row;
@@ -96,8 +100,8 @@ header{
 }
 .active1{
 	font-weight: 700;
-	color: #4294FA;
-}
+	color: #4294FA!important;
+	}
 .active3{
 	font-weight: 700;
 }
@@ -130,6 +134,7 @@ hr{
 	font-size: 1.5em;
 	color: #FFFFFF;
 	z-index: 2;
+	text-shadow: 1px 1px 2px #000000;
 }
 .swiper-text2{
 	position: absolute;
@@ -138,6 +143,7 @@ hr{
 	font-size: 1em;
 	color: #FFFFFF;	
 	z-index: 2;
+	text-shadow: 1px 1px 2px #000000;
 }
 .footer-img{
 	width: 8em;
@@ -201,4 +207,45 @@ hr{
 	color: #fff;
 	margin-left: 0.2em;
 	font-weight: 500;
+<<<<<<< .mine
 }
+.section-menu{
+	background: #fff;
+}
+.clearfix1-img{
+	width: 100%;
+}
+.clearfix1 p{
+	width: 45%;
+	padding: 0.5em;
+}
+.clearfix1{
+	margin:1em 0.5em;
+	display: flex;
+	flex-flow: row;
+}
+.clearfix1 li{
+	width: 45%;
+	flex: 1;
+	margin: 0 0.5em;
+}
+.clearfix1-box{
+	margin-bottom: 1em;
+	background: #fff;
+}
+=======
+}
+.tit{
+	padding: 1em;
+}
+.icon-yanjing{
+	float: right;
+	margin-top: 0.2em;
+	margin-right: 0.5em;
+}
+.ip{
+	width: 90%;
+	margin-left: 1.2em;
+	margin-top:0.5em;
+}
+>>>>>>> .r58

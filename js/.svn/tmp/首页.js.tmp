@@ -7,6 +7,10 @@ var keyss=localStorage.getItem('ipts');
 
 var footmenu=getCls('footmenu')[0],
 	footmenu1=getCls('footmenu1')[0];
+<<<<<<< .mine
+	
+//轮播图
+=======
 	
 //轮播图
 window.onload = function() {
@@ -17,6 +21,8 @@ window.onload = function() {
     prevButton: '.swiper-button-prev',
   })     
 }
+>>>>>>> .r58
+
 
 //高度监听
 window.onscroll=function(){
@@ -40,6 +46,8 @@ footmenu.onclick=function(){
 	document.documentElement.scrollTop = 0
 	document.body.scrollTop = 0
 }
+<<<<<<< .mine
+=======
 
 //随机数设置
 for(var i=0;i<footerbox1.length;i++){
@@ -47,6 +55,7 @@ for(var i=0;i<footerbox1.length;i++){
 	var text = Math.floor(Math.random()*500);
 	ap[i].textContent=text;
 }
+>>>>>>> .r58
 
 //登录显示
 if(keyss!==null){
@@ -57,6 +66,57 @@ if(keyss!==null){
 	$('.icon-shouye').css({'display':'none'})
 	$('.icon-wodejuhuasuan').css({'display':'block'})
 }
+<<<<<<< .mine
+
+//ajax 
+var astb=getCls('swiper-wrapper')[0];
+var swipertext1=getCls("swiper-text1")[0],
+	swipertext2=getCls("swiper-text2")[0];
+var slide ='';
+$.ajax({
+    url:'getPics.php',
+    type:'GET',
+    success:function (res) {
+        var data = JSON.parse(res);
+        console.log(data.result.data)
+        let resultData = data.result.data;
+        var str = '';
+        var stb = '';
+        resultData.forEach(function (item,index) {
+		//$.each(data,function (item,index) {
+		for(var j=10;j<footerbox1.length;j++){
+			stb += `<div class="swiper-slide"><img  src="${item.thumbnail_pic_s}" /><p style="text-shadow:1px 1px 2px #000000;">${item.title}</p></div>`;
+		}
+    	str += `<div class="footer-box"><img class="footer-img" src="${item.thumbnail_pic_s}" /><p class="footer-text">${item.title}</p><i class="icon-huihua1 iconfont"></i><span class="footer-text2"></span></div><hr />`;
+    	
+		})
+        astb.innerHTML = stb;
+		document.querySelector('footer').innerHTML = str;
+		//随机数设置
+		for(var i=0;i<footerbox1.length;i++){
+		ap[i].index=i;
+		var text = Math.floor(Math.random()*500);
+		ap[i].textContent=text;
+		//轮播图
+		var mySwiper = new Swiper ('.swiper-container', {
+	   	loop: true,
+	    pagination: '.swiper-pagination',
+	    nextButton: '.swiper-button-next',
+	    prevButton: '.swiper-button-prev',
+	    autoplay:5000,
+	    onSlideChangeEnd: function(swiper){
+	  	 swipertext1.textContent=swiper.activeIndex
+	    }
+	  	})
+	  	//数字设置
+	  	swipertext2.textContent="/"+footerbox1.length;
+	  	
+}
+}    
+})
+window.onload = function() {
+}
+=======
 
 //ajax 
 $.ajax({
@@ -74,3 +134,4 @@ $.ajax({
 		document.querySelector('footer').innerHTML = str;
     }    
 })
+>>>>>>> .r58
