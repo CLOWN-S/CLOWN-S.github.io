@@ -62,9 +62,9 @@ $.ajax({
                 img.src = item.image;
                 img.onload = function () {
                     index = getMinHeightLi(aLi);
-                    //console.log(index)
+                    console.log(index)
                     var stc = $(aLi).eq(index).html();
-                    stc += '<div class="clearfix1-box"><img class="clearfix1-img" src="' + item.image + '"/><p>' + item.title + '</p></div>';
+                    stc += '<div class="clearfix1-box"><img class="clearfix1-img" src="' + item.image + '" alt="' + item.title + '" /><p>' + item.title + '</p></div>';
                     $(aLi).eq(index).html(stc);
                 }
                     if(i<data.length-1){
@@ -82,7 +82,7 @@ $.ajax({
 //获取最小高度li
 function getMinHeightLi(lists) {
 	var minHeight = lists[index].offsetHeight;
-	//console.log(minHeight)
+	console.log(minHeight)
 	for(var i=0;i<lists.length;i++){
 	    if(minHeight > lists[i].offsetHeight){
 	        minHeight = lists[i].offsetHeight
