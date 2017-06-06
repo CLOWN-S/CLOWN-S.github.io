@@ -9,9 +9,6 @@ a{
 	text-decoration: initial;
 	color: #000000;
 }
-.menua{
-	color: #fff;
-}
 .menu-box{
 	display: flex;
 	flex-flow: row;
@@ -220,10 +217,16 @@ hr{
 .clearfix1 p{
 	width: 100%;
 	padding: 0.5em;
+<<<<<<< .mine
 	overflow: hidden;
+=======
+	word-wrap: break-word; 
+>>>>>>> .r88
 }
 .clearfix1{
 	margin:1em 0.5em;
+	/*display: flex;
+	flex-flow: row;*/
 }
 .clearfix1 li{
 	float: left;
@@ -237,17 +240,15 @@ hr{
 }
 .tit{
 	font-size:1.2em;
-	padding:1em 0;
-	margin-left:5%;
-	margin-right:5%;
+	padding: 1em;
 }
 .icon-yanjing{
-	float: right;	
+	float: right;
 	margin-right: 0.5em;
 }
 .ip{
 	width: 90%;
-	margin-left: 5%;
+	margin-left: 1.2em;
 	margin-top:0.5em;
 }
 .rt{

@@ -24,17 +24,23 @@
 		<div class="box1">
 			<div class="coloe"></div>
 			<div class="text"><p>精品栏目</p></div>
-				<ul class="big-box">
+			<div class="xuanxiang">
+				<ul>
 					<li>天气</li>
 					<li>个人中心</li>
 					<li>猜你喜欢</li>
+				</ul>
+				<ul>
 					<li>视频</li>
 					<li>NBA</li>
 					<li>占卜</li>
+				</ul>
+				<ul>
 					<li>二手房</li>
 					<li>车型</li>
 					<li>鲜城</li>
 				</ul>
+			</div>
 		</div>
 		<div class="box">
 		<div class="x-table">
@@ -45,7 +51,7 @@
 		</div>
 		<div class="x-tables">
 			<span class="zhineng">智能模式</span><br />
-			<span class="ps">智能模式会根据您的阅读偏好自动展示首页内容</span>
+			<span class="ps">智能模式会根据您的阅读偏好自动展示</span>
 			<div class="tuo1">
 				<div class="yuan1"></div>
 			</div>
@@ -60,21 +66,34 @@
 		</div>
 		<div class="bs">保存</div>
 		</div>
+		<script type="text/javascript" src="js/base.js" ></script>
 		<script type="text/javascript">
 			var tuo=document.getElementsByClassName('tuo')[0];
 			var yuan=document.getElementsByClassName('yuan')[0];
 			var yuan1=document.getElementsByClassName('yuan1')[0]
 			var tuo1=document.getElementsByClassName('tuo1')[0];
-			var x=1
+			var x=1;
+			var Nopiture=getCookie('nopiture');
+			console.log(Nopiture)
+			if(Nopiture=="nopiture"){
+			yuan.style.background="#FFFFFF";
+			yuan.style.transform="translate3d(33px,0,0)";
+			tuo.style.background="#008af5";
+			}else{
+				tuo.style.background="#ffffff";
+				yuan.style.transform="translate3d(0,0,0)";
+			}
 			tuo.onclick=function(){
 				if(x%2==1){
 				 	this.style.background="#008af5";
 			  	yuan.style.background="#FFFFFF";
 			  	yuan.style.transform="translate3d(33px,0,0)";
+			  	setCookie("nopiture","nopiture",30);
 			  	x++;
 				}else if(x%2==0){
 					this.style.background="#ffffff";
 					yuan.style.transform="translate3d(0,0,0)";
+					removeCookie("nopiture");
 					x++;
 				}
 			}
@@ -111,7 +130,6 @@
 			  		bs.onclick=function(){
 			  			alert("保存成功")
 			  		}
-			 	
 			  	
 			  
 		</script>

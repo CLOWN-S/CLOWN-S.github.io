@@ -9,9 +9,6 @@ a{
 	text-decoration: initial;
 	color: #000000;
 }
-.menua{
-	color: #fff;
-}
 .menu-box{
 	display: flex;
 	flex-flow: row;
@@ -218,45 +215,34 @@ hr{
 	width: 100%;
 }
 .clearfix1 p{
-	width: 100%;
+	width: 45%;
 	padding: 0.5em;
-	overflow: hidden;
 }
 .clearfix1{
 	margin:1em 0.5em;
+	/*display: flex;
+	flex-flow: row;*/
 }
 .clearfix1 li{
 	float: left;
-	width: 44.5%;
+	width: 45%;
 	/*flex: 1;*/
-	margin: 0 2.5%;
+	margin: 0 0.5em;
 }
 .clearfix1-box{
 	margin-bottom: 1em;
 	background: #fff;
 }
 .tit{
-	font-size:1.2em;
-	padding:1em 0;
-	margin-left:5%;
-	margin-right:5%;
+	padding: 1em;
 }
 .icon-yanjing{
-	float: right;	
+	float: right;
+	margin-top: 0.2em;
 	margin-right: 0.5em;
 }
 .ip{
 	width: 90%;
-	margin-left: 5%;
+	margin-left: 1.2em;
 	margin-top:0.5em;
-}
-.rt{
-	float: right;
-	margin-right: 0.5em;
-	font-size: 0.6em;
-	color: #484747;
-	opacity: 0.8;
-}
-.movie-box{
-	margin-bottom: 1em;
 }
